@@ -1,7 +1,12 @@
 language: java
+
 sudo: false
+
 install: true
 
+
+script:
+ - mvn clean test
 addons:
   sonarcloud:
     organization: "mehrabr-github"

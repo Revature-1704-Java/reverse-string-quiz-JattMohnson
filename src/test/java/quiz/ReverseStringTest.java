@@ -8,27 +8,32 @@ import static org.junit.Assert.assertEquals;
 public class ReverseStringTest {
 
     @Test
-    public void testAnEmptyString() {
+    public void testAnEmptyString() 
+    {
         assertEquals("", new ReverseString().reverse(""));
     }
 
     @Test
-    public void testAWord() {
+    public void testAWord()
+    {
         assertEquals("tobor", new ReverseString().reverse("robot"));
     }
 
     @Test
-    public void testACapitalizedWord() {
+    public void testACapitalizedWord() 
+    {
         assertEquals("nemaR", new ReverseString().reverse("Ramen"));
     }
 
     @Test
-    public void testASentenceWithPunctuation() {
+    public void testASentenceWithPunctuation() 
+    {
         assertEquals("!yrgnuh m'I", new ReverseString().reverse("I'm hungry!"));
     }
 
     @Test
-    public void testAPalindrome() {
+    public void testAPalindrome() 
+    {
         assertEquals("racecar", new ReverseString().reverse("racecar"));
     }
 
